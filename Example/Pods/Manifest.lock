@@ -1,0 +1,16 @@
+PODS:
+  - IMGLYColorPicker (1.0.0)
+
+DEPENDENCIES:
+  - IMGLYColorPicker (from `../`)
+
+EXTERNAL SOURCES:
+  IMGLYColorPicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IMGLYColorPicker: e1052c83501edffa93effc913bf9f29f914f843e
+
+PODFILE CHECKSUM: 7e4036111d8962256e5ad75ef64a5e90a509ac41
+
+COCOAPODS: 1.1.1

@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'IMGLYColorPicker_Example' do
+  pod 'IMGLYColorPicker', :path => '../'
+end

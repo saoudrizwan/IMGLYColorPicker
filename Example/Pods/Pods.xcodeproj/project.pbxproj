@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12D98DD9802BEEDAC940B290104A9864 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343F012744D50EDA32CC8B7421F82834 /* ReplaceMe.swift */; };
+		28C2C4C607D0577B5D3DDD316E3CEC2D /* transparent_color_pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = F7C2B590FC02CB78B895AF804A2F50C2 /* transparent_color_pattern.png */; };
+		2AA7D7128D69C0F8831BC3561BC3BCB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		303FCCCB9C8F1020FB893B97BD108F0B /* CGContextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9F02BF85DBEB38403ECDF9DCC09D1 /* CGContextExtension.swift */; };
+		40DACEDED0B5828368FC59D4524AAFFC /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7380DC6FA4280A2151B8DFBCB2ADD607 /* UIColorExtension.swift */; };
+		410FCD00A65B1D493B3EFB0BF2299198 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC959A05CEAFA6A06687140FA17422 /* ColorPickerView.swift */; };
+		469C2937FD57CEA5C1187C5FF918E20E /* IMGLYColorPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1BFAB4FB09DD7F91C0AB0092D228F690 /* IMGLYColorPicker.bundle */; };
+		4DF837D38F12A3CFBE7ED74C7E930B35 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B86A73C0EFC901FA1804449D4736F7 /* PickerView.swift */; };
+		61B6476E8AA415A32890240CDF2FC942 /* HuePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83244B3C4D166460F7C64238C607DF42 /* HuePickerView.swift */; };
+		63CDAAB03A77C3857A15029436E3F97E /* CGColorSpaceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1692EBFFFD8C964F3DA2832B3D4FC2D1 /* CGColorSpaceExtension.swift */; };
+		6467310DA834CF0C7A4059CB391B48C7 /* IMGLYColorPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6984C9E7384A6B17F0C9DCB745A63ED1 /* IMGLYColorPicker-dummy.m */; };
+		6A2A130D69CFA3C204296111172FD272 /* Pods-IMGLYColorPicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CDC642D19549A2F9C2F1DF7297DAE1 /* Pods-IMGLYColorPicker_Example-dummy.m */; };
+		75FB5351D5A23B84A78611976811F152 /* transparent_color_pattern@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64EA1DBB219B8F0CACE07A4D2D210C39 /* transparent_color_pattern@3x.png */; };
+		7D8452EEA3FBE63738969A551C063C72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		8453A03B7B58D3F5923114C8BD63ECDD /* transparent_color_pattern@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D826272976DC9A930609476C1A08971 /* transparent_color_pattern@2x.png */; };
+		84B50470788DB194863E1EA37D378C8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695DA86B20FEA7BF7EA40FA7DB65A479 /* UIKit.framework */; };
+		A9C192C4A87A88C9FD487A50E758E19A /* IMGLYColorPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F37E7814287F3524F60AE1F4C581779F /* IMGLYColorPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5537EA518E8DCC54B918AECFCC5CF57 /* SaturationBrightnessPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB87DBD00A760431020D72C623DFFF3 /* SaturationBrightnessPickerView.swift */; };
+		C005AE73F37FA2F17965CBE58A6F6BCA /* AlphaPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F5097B899632E2ECD79EC0CB4CFEA5 /* AlphaPickerView.swift */; };
+		C19B4C4BB107FA66F9F5F74B6B75D9C5 /* Pods-IMGLYColorPicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460747E66BE6B078645EE335D7A405A /* Pods-IMGLYColorPicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9B6BF16A5AA8EA7F92D851B00C1D236 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9AD02E9CEE9B012A246B3874CF4587 /* CoreGraphics.framework */; };
+		FAFF0B430FA93C7EDBDF643307FF5C43 /* ColorValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7A076C1D65CD3AB172B47799D98A8B /* ColorValues.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1D757984438E64367F07125B4B5F896 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D291163F2E18477ACE560FE6EE5BF8E9;
+			remoteInfo = "IMGLYColorPicker-IMGLYColorPicker";
+		};
+		D7CDF577C7F7DFCC0BFA76A4DD3F7581 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B9535CC60FD2023A9AA15FA9A1647FB;
+			remoteInfo = IMGLYColorPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0460747E66BE6B078645EE335D7A405A /* Pods-IMGLYColorPicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IMGLYColorPicker_Example-umbrella.h"; sourceTree = "<group>"; };
+		09AA6A6F87CB64C05B9E33B1E0B5DC15 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D826272976DC9A930609476C1A08971 /* transparent_color_pattern@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; path = "transparent_color_pattern@2x.png"; sourceTree = "<group>"; };
+		12F9AFB8DCCCD2CF2473289D932B7395 /* IMGLYColorPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IMGLYColorPicker.xcconfig; sourceTree = "<group>"; };
+		1692EBFFFD8C964F3DA2832B3D4FC2D1 /* CGColorSpaceExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGColorSpaceExtension.swift; sourceTree = "<group>"; };
+		1BFAB4FB09DD7F91C0AB0092D228F690 /* IMGLYColorPicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = IMGLYColorPicker.bundle; path = IMGLYColorPicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		261E4AC5CBBA8F84A9E883C2C15B28F5 /* Pods-IMGLYColorPicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMGLYColorPicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		340AFD2014365D45F73334CC695129EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		343F012744D50EDA32CC8B7421F82834 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		3FFBE7D67B88EA647D6F692C453C9B4F /* Pods-IMGLYColorPicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-IMGLYColorPicker_Example.modulemap"; sourceTree = "<group>"; };
+		458CA3809AA04B52B8713A37D08628D8 /* Pods_IMGLYColorPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IMGLYColorPicker_Example.framework; path = "Pods-IMGLYColorPicker_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D9AD02E9CEE9B012A246B3874CF4587 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		5C7A076C1D65CD3AB172B47799D98A8B /* ColorValues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorValues.swift; sourceTree = "<group>"; };
+		64EA1DBB219B8F0CACE07A4D2D210C39 /* transparent_color_pattern@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; path = "transparent_color_pattern@3x.png"; sourceTree = "<group>"; };
+		6910413476D8F190EE0BF5502B3E8B9A /* Pods-IMGLYColorPicker_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IMGLYColorPicker_Example-resources.sh"; sourceTree = "<group>"; };
+		695DA86B20FEA7BF7EA40FA7DB65A479 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		6984C9E7384A6B17F0C9DCB745A63ED1 /* IMGLYColorPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IMGLYColorPicker-dummy.m"; sourceTree = "<group>"; };
+		7380DC6FA4280A2151B8DFBCB2ADD607 /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		792165F2CA033667D6F57205316D40A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7BB87DBD00A760431020D72C623DFFF3 /* SaturationBrightnessPickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SaturationBrightnessPickerView.swift; sourceTree = "<group>"; };
+		83244B3C4D166460F7C64238C607DF42 /* HuePickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HuePickerView.swift; sourceTree = "<group>"; };
+		84D5AC657004CE924B9BE86A8116BA7A /* IMGLYColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IMGLYColorPicker.framework; path = IMGLYColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E52E9AC4158D9E91A2DB04B95834430 /* Pods-IMGLYColorPicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMGLYColorPicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98AC51F89C6B41974245E514E482AF27 /* Pods-IMGLYColorPicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IMGLYColorPicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9B37944EDF13CF3F92A24B0641768D7C /* Pods-IMGLYColorPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMGLYColorPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9CE38B056B82B02254DFE3E0186FFF94 /* Pods-IMGLYColorPicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IMGLYColorPicker_Example-frameworks.sh"; sourceTree = "<group>"; };
+		A049A4A1FC7787603733844187752C59 /* ResourceBundle-IMGLYColorPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-IMGLYColorPicker-Info.plist"; sourceTree = "<group>"; };
+		B0B86A73C0EFC901FA1804449D4736F7 /* PickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		B8F5097B899632E2ECD79EC0CB4CFEA5 /* AlphaPickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlphaPickerView.swift; sourceTree = "<group>"; };
+		D9532D644CD57E0578262B7A3A0AB1FD /* IMGLYColorPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IMGLYColorPicker.modulemap; sourceTree = "<group>"; };
+		DDC3B47D53F14B690F82D24BEF46CCE5 /* IMGLYColorPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IMGLYColorPicker-prefix.pch"; sourceTree = "<group>"; };
+		F37E7814287F3524F60AE1F4C581779F /* IMGLYColorPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IMGLYColorPicker-umbrella.h"; sourceTree = "<group>"; };
+		F4CDC642D19549A2F9C2F1DF7297DAE1 /* Pods-IMGLYColorPicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IMGLYColorPicker_Example-dummy.m"; sourceTree = "<group>"; };
+		F7C2B590FC02CB78B895AF804A2F50C2 /* transparent_color_pattern.png */ = {isa = PBXFileReference; includeInIndex = 1; path = transparent_color_pattern.png; sourceTree = "<group>"; };
+		FAAC959A05CEAFA6A06687140FA17422 /* ColorPickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		FBD9F02BF85DBEB38403ECDF9DCC09D1 /* CGContextExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGContextExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77914E0958CD4969FB0C504D6BBC9F5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA7D7128D69C0F8831BC3561BC3BCB8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F2FACA9720CB2D59978BEC188223847 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9B6BF16A5AA8EA7F92D851B00C1D236 /* CoreGraphics.framework in Frameworks */,
+				7D8452EEA3FBE63738969A551C063C72 /* Foundation.framework in Frameworks */,
+				84B50470788DB194863E1EA37D378C8E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD9E26743141D94F6C4557985E44D7C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D185E38271E1279D6AC3E7A00CAF9BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D185E38271E1279D6AC3E7A00CAF9BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4D9AD02E9CEE9B012A246B3874CF4587 /* CoreGraphics.framework */,
+				792165F2CA033667D6F57205316D40A1 /* Foundation.framework */,
+				695DA86B20FEA7BF7EA40FA7DB65A479 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4273156BD0EC61F992047843F3C18A09 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD5AE94D7A734BB632B0ED45A3414D2F /* IMGLYColorPicker */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				4273156BD0EC61F992047843F3C18A09 /* Development Pods */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				BF3B26DDFDFF6DDC7933E3F52FB11E29 /* Products */,
+				AF10FF1D2EE307B79C06C07630D7210D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		92FFC39B509A80CD44964B41E65856BD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F7C2B590FC02CB78B895AF804A2F50C2 /* transparent_color_pattern.png */,
+				0D826272976DC9A930609476C1A08971 /* transparent_color_pattern@2x.png */,
+				64EA1DBB219B8F0CACE07A4D2D210C39 /* transparent_color_pattern@3x.png */,
+			);
+			name = Assets;
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		96A3682E239E4EB057F54BB1181A8EFE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B8F5097B899632E2ECD79EC0CB4CFEA5 /* AlphaPickerView.swift */,
+				1692EBFFFD8C964F3DA2832B3D4FC2D1 /* CGColorSpaceExtension.swift */,
+				FBD9F02BF85DBEB38403ECDF9DCC09D1 /* CGContextExtension.swift */,
+				FAAC959A05CEAFA6A06687140FA17422 /* ColorPickerView.swift */,
+				5C7A076C1D65CD3AB172B47799D98A8B /* ColorValues.swift */,
+				83244B3C4D166460F7C64238C607DF42 /* HuePickerView.swift */,
+				B0B86A73C0EFC901FA1804449D4736F7 /* PickerView.swift */,
+				343F012744D50EDA32CC8B7421F82834 /* ReplaceMe.swift */,
+				7BB87DBD00A760431020D72C623DFFF3 /* SaturationBrightnessPickerView.swift */,
+				7380DC6FA4280A2151B8DFBCB2ADD607 /* UIColorExtension.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AF10FF1D2EE307B79C06C07630D7210D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3717A9EAA7F09466A1F5B91F1AF49B0 /* Pods-IMGLYColorPicker_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BA7C5E175E45AD85765B67F1A58DBC95 /* IMGLYColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				96A3682E239E4EB057F54BB1181A8EFE /* Classes */,
+			);
+			name = IMGLYColorPicker;
+			path = IMGLYColorPicker;
+			sourceTree = "<group>";
+		};
+		BF3B26DDFDFF6DDC7933E3F52FB11E29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BFAB4FB09DD7F91C0AB0092D228F690 /* IMGLYColorPicker.bundle */,
+				84D5AC657004CE924B9BE86A8116BA7A /* IMGLYColorPicker.framework */,
+				458CA3809AA04B52B8713A37D08628D8 /* Pods_IMGLYColorPicker_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD4A57E06D20694951FF183474D61FAB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F2C6294B929C80658BFD86AC424A2D30 /* IMGLYColorPicker */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F2C6294B929C80658BFD86AC424A2D30 /* IMGLYColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				92FFC39B509A80CD44964B41E65856BD /* Assets */,
+			);
+			name = IMGLYColorPicker;
+			path = IMGLYColorPicker;
+			sourceTree = "<group>";
+		};
+		F3717A9EAA7F09466A1F5B91F1AF49B0 /* Pods-IMGLYColorPicker_Example */ = {
+			isa = PBXGroup;
+			children = (
+				09AA6A6F87CB64C05B9E33B1E0B5DC15 /* Info.plist */,
+				3FFBE7D67B88EA647D6F692C453C9B4F /* Pods-IMGLYColorPicker_Example.modulemap */,
+				98AC51F89C6B41974245E514E482AF27 /* Pods-IMGLYColorPicker_Example-acknowledgements.markdown */,
+				261E4AC5CBBA8F84A9E883C2C15B28F5 /* Pods-IMGLYColorPicker_Example-acknowledgements.plist */,
+				F4CDC642D19549A2F9C2F1DF7297DAE1 /* Pods-IMGLYColorPicker_Example-dummy.m */,
+				9CE38B056B82B02254DFE3E0186FFF94 /* Pods-IMGLYColorPicker_Example-frameworks.sh */,
+				6910413476D8F190EE0BF5502B3E8B9A /* Pods-IMGLYColorPicker_Example-resources.sh */,
+				0460747E66BE6B078645EE335D7A405A /* Pods-IMGLYColorPicker_Example-umbrella.h */,
+				8E52E9AC4158D9E91A2DB04B95834430 /* Pods-IMGLYColorPicker_Example.debug.xcconfig */,
+				9B37944EDF13CF3F92A24B0641768D7C /* Pods-IMGLYColorPicker_Example.release.xcconfig */,
+			);
+			name = "Pods-IMGLYColorPicker_Example";
+			path = "Target Support Files/Pods-IMGLYColorPicker_Example";
+			sourceTree = "<group>";
+		};
+		F9A4D2C1F5E641731BB9A75C3D98628F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9532D644CD57E0578262B7A3A0AB1FD /* IMGLYColorPicker.modulemap */,
+				12F9AFB8DCCCD2CF2473289D932B7395 /* IMGLYColorPicker.xcconfig */,
+				6984C9E7384A6B17F0C9DCB745A63ED1 /* IMGLYColorPicker-dummy.m */,
+				DDC3B47D53F14B690F82D24BEF46CCE5 /* IMGLYColorPicker-prefix.pch */,
+				F37E7814287F3524F60AE1F4C581779F /* IMGLYColorPicker-umbrella.h */,
+				340AFD2014365D45F73334CC695129EA /* Info.plist */,
+				A049A4A1FC7787603733844187752C59 /* ResourceBundle-IMGLYColorPicker-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/IMGLYColorPicker";
+			sourceTree = "<group>";
+		};
+		FD5AE94D7A734BB632B0ED45A3414D2F /* IMGLYColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				BA7C5E175E45AD85765B67F1A58DBC95 /* IMGLYColorPicker */,
+				CD4A57E06D20694951FF183474D61FAB /* Resources */,
+				F9A4D2C1F5E641731BB9A75C3D98628F /* Support Files */,
+			);
+			name = IMGLYColorPicker;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3E5EEA0F3EAA75C84B21D99F30F9B875 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19B4C4BB107FA66F9F5F74B6B75D9C5 /* Pods-IMGLYColorPicker_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F18F5C49E2B56761A9368B702F17AD09 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C192C4A87A88C9FD487A50E758E19A /* IMGLYColorPicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		11F1A43994DFA64529C437C1E9C7EF82 /* Pods-IMGLYColorPicker_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B27CD8E27B8F75296DA12E504B7C40CF /* Build configuration list for PBXNativeTarget "Pods-IMGLYColorPicker_Example" */;
+			buildPhases = (
+				62AAAE17436412A4E5605F2C0334EDC8 /* Sources */,
+				77914E0958CD4969FB0C504D6BBC9F5C /* Frameworks */,
+				3E5EEA0F3EAA75C84B21D99F30F9B875 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA4115E7E6987CCBAA7E53BC9209FED9 /* PBXTargetDependency */,
+			);
+			name = "Pods-IMGLYColorPicker_Example";
+			productName = "Pods-IMGLYColorPicker_Example";
+			productReference = 458CA3809AA04B52B8713A37D08628D8 /* Pods_IMGLYColorPicker_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3B9535CC60FD2023A9AA15FA9A1647FB /* IMGLYColorPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC532778506C7A3BA631521038DBAA0B /* Build configuration list for PBXNativeTarget "IMGLYColorPicker" */;
+			buildPhases = (
+				89C6DF077CD7E058EDE2C46632C180B0 /* Sources */,
+				9F2FACA9720CB2D59978BEC188223847 /* Frameworks */,
+				2AB1ECD50880FDEEB65CD9DC72A7DD84 /* Resources */,
+				F18F5C49E2B56761A9368B702F17AD09 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2571455385E2CFC6AD4B39EDBA9FBB46 /* PBXTargetDependency */,
+			);
+			name = IMGLYColorPicker;
+			productName = IMGLYColorPicker;
+			productReference = 84D5AC657004CE924B9BE86A8116BA7A /* IMGLYColorPicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D291163F2E18477ACE560FE6EE5BF8E9 /* IMGLYColorPicker-IMGLYColorPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4C2E54060744ABE0CCB7DAC07771EF7 /* Build configuration list for PBXNativeTarget "IMGLYColorPicker-IMGLYColorPicker" */;
+			buildPhases = (
+				7525E0F59A9E9FEE52DC3570958EA8A1 /* Sources */,
+				FD9E26743141D94F6C4557985E44D7C7 /* Frameworks */,
+				0D77641B57B5DF40008F7D57E9888662 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IMGLYColorPicker-IMGLYColorPicker";
+			productName = "IMGLYColorPicker-IMGLYColorPicker";
+			productReference = 1BFAB4FB09DD7F91C0AB0092D228F690 /* IMGLYColorPicker.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = BF3B26DDFDFF6DDC7933E3F52FB11E29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B9535CC60FD2023A9AA15FA9A1647FB /* IMGLYColorPicker */,
+				D291163F2E18477ACE560FE6EE5BF8E9 /* IMGLYColorPicker-IMGLYColorPicker */,
+				11F1A43994DFA64529C437C1E9C7EF82 /* Pods-IMGLYColorPicker_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D77641B57B5DF40008F7D57E9888662 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C2C4C607D0577B5D3DDD316E3CEC2D /* transparent_color_pattern.png in Resources */,
+				8453A03B7B58D3F5923114C8BD63ECDD /* transparent_color_pattern@2x.png in Resources */,
+				75FB5351D5A23B84A78611976811F152 /* transparent_color_pattern@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AB1ECD50880FDEEB65CD9DC72A7DD84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469C2937FD57CEA5C1187C5FF918E20E /* IMGLYColorPicker.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62AAAE17436412A4E5605F2C0334EDC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A2A130D69CFA3C204296111172FD272 /* Pods-IMGLYColorPicker_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7525E0F59A9E9FEE52DC3570958EA8A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89C6DF077CD7E058EDE2C46632C180B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C005AE73F37FA2F17965CBE58A6F6BCA /* AlphaPickerView.swift in Sources */,
+				63CDAAB03A77C3857A15029436E3F97E /* CGColorSpaceExtension.swift in Sources */,
+				303FCCCB9C8F1020FB893B97BD108F0B /* CGContextExtension.swift in Sources */,
+				410FCD00A65B1D493B3EFB0BF2299198 /* ColorPickerView.swift in Sources */,
+				FAFF0B430FA93C7EDBDF643307FF5C43 /* ColorValues.swift in Sources */,
+				61B6476E8AA415A32890240CDF2FC942 /* HuePickerView.swift in Sources */,
+				6467310DA834CF0C7A4059CB391B48C7 /* IMGLYColorPicker-dummy.m in Sources */,
+				4DF837D38F12A3CFBE7ED74C7E930B35 /* PickerView.swift in Sources */,
+				12D98DD9802BEEDAC940B290104A9864 /* ReplaceMe.swift in Sources */,
+				B5537EA518E8DCC54B918AECFCC5CF57 /* SaturationBrightnessPickerView.swift in Sources */,
+				40DACEDED0B5828368FC59D4524AAFFC /* UIColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2571455385E2CFC6AD4B39EDBA9FBB46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "IMGLYColorPicker-IMGLYColorPicker";
+			target = D291163F2E18477ACE560FE6EE5BF8E9 /* IMGLYColorPicker-IMGLYColorPicker */;
+			targetProxy = A1D757984438E64367F07125B4B5F896 /* PBXContainerItemProxy */;
+		};
+		DA4115E7E6987CCBAA7E53BC9209FED9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IMGLYColorPicker;
+			target = 3B9535CC60FD2023A9AA15FA9A1647FB /* IMGLYColorPicker */;
+			targetProxy = D7CDF577C7F7DFCC0BFA76A4DD3F7581 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11BA64570B3ACC584F3486DB01F9F53C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12F9AFB8DCCCD2CF2473289D932B7395 /* IMGLYColorPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IMGLYColorPicker/IMGLYColorPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IMGLYColorPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IMGLYColorPicker/IMGLYColorPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = IMGLYColorPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		83F6E8207046C3715F5A671065D85626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12F9AFB8DCCCD2CF2473289D932B7395 /* IMGLYColorPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IMGLYColorPicker/IMGLYColorPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IMGLYColorPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IMGLYColorPicker/IMGLYColorPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = IMGLYColorPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		965508EC0C0E524863A3920C7683F54B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B37944EDF13CF3F92A24B0641768D7C /* Pods-IMGLYColorPicker_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-IMGLYColorPicker_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IMGLYColorPicker_Example/Pods-IMGLYColorPicker_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_IMGLYColorPicker_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ACF59043780AEDEF6EBE21F644047B06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12F9AFB8DCCCD2CF2473289D932B7395 /* IMGLYColorPicker.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IMGLYColorPicker";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/IMGLYColorPicker/ResourceBundle-IMGLYColorPicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = IMGLYColorPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E599B41BA4417679924A118C9B3F289B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12F9AFB8DCCCD2CF2473289D932B7395 /* IMGLYColorPicker.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IMGLYColorPicker";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/IMGLYColorPicker/ResourceBundle-IMGLYColorPicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = IMGLYColorPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		FA524BD97BC4A4A4EC9748E5E04FDC0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E52E9AC4158D9E91A2DB04B95834430 /* Pods-IMGLYColorPicker_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-IMGLYColorPicker_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IMGLYColorPicker_Example/Pods-IMGLYColorPicker_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_IMGLYColorPicker_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B27CD8E27B8F75296DA12E504B7C40CF /* Build configuration list for PBXNativeTarget "Pods-IMGLYColorPicker_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA524BD97BC4A4A4EC9748E5E04FDC0E /* Debug */,
+				965508EC0C0E524863A3920C7683F54B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC532778506C7A3BA631521038DBAA0B /* Build configuration list for PBXNativeTarget "IMGLYColorPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83F6E8207046C3715F5A671065D85626 /* Debug */,
+				11BA64570B3ACC584F3486DB01F9F53C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4C2E54060744ABE0CCB7DAC07771EF7 /* Build configuration list for PBXNativeTarget "IMGLYColorPicker-IMGLYColorPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACF59043780AEDEF6EBE21F644047B06 /* Debug */,
+				E599B41BA4417679924A118C9B3F289B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
