@@ -10,6 +10,7 @@ A user can select a color by hue, saturation, brightness and alpha.
                        DESC
 
   s.homepage         = 'https://github.com/imgly/IMGLYColorPicker'
+  s.screenshot       = 'https://raw.githubusercontent.com/imgly/IMGLYColorPicker/master/screenshot.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '9elements GmbH' => 'contact@9elements.com' }
   s.source           = { :git => 'https://github.com/imgly/IMGLYColorPicker.git', :tag => s.version.to_s }
