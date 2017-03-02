@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/IMGLYColorPicker.svg?style=flat)](http://cocoapods.org/pods/IMGLYColorPicker)
 
 IMGLYColorPicker is a color picker control for iOS that has been extracted from
-the [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_source=Github&utm_medium=Side_Projects&utm_content=IMGLYColorPicker&utm_term=iOS) and made available as open source.
+the [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=IMGLYColorPicker&utm_term=iOS) and made available as open source.
 It is written in Swift, compatible with Objective-C and has full support for wide colors.
 A user can select a color by hue, saturation, brightness and alpha.
 
