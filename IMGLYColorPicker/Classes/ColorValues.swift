@@ -18,7 +18,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-protocol Numeric: Comparable, ExpressibleByFloatLiteral, ExpressibleByIntegerLiteral, SignedNumber {
+protocol Numeric: Comparable, ExpressibleByFloatLiteral {
     var value: Double { set get }
     init(_ value: Double)
 }
